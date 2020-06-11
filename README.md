@@ -4,21 +4,21 @@
 
 This repository holds the code for novel RefineGAN, 
 
-![](https://github.com/alperozaslan993/compressed-sensing-RefineGAN-novelLoss/blob/master/Overview.png "")
+![](https://github.com/alperozaslan993/CS-MRI-NovelRefineGAN/blob/master/Overview.png "")
 *Overview of the proposed method: it aims to reconstruct the images which are satisfied the constraint of under-sampled measurement data; and
 whether those look similar to the fully aliasing-free results. Additionally, if the fully sampled images taken from the database go through the same process of
 under-sampling acceleration; we can still receive the reconstruction as expected to the original images.*
 
-![](https://github.com/alperozaslan993/compressed-sensing-RefineGAN-novelLoss/blob/master/ReconGAN.png "")
+![](https://github.com/alperozaslan993/CS-MRI-NovelRefineGAN/blob/master/ReconGAN.png "")
 *Two learning processes are trained adversarially to achieve better reconstruction from generator G and to fool the ability of recognizing the real or
 fake MR image from discriminator D*
 
 
-![](https://github.com/alperozaslan993/compressed-sensing-RefineGAN-novelLoss/blob/master/DualLoss.png "")
+![](https://github.com/alperozaslan993/CS-MRI-NovelRefineGAN/blob/master/DualLoss.png "")
 *The cyclic data consistency loss, which is a combination of under-sampled frequency loss and the fully reconstructed image loss. Instead of using a single term/type of loss function, we are using a mixture of l1 and l2 based loss functions for stability and neglecting outliers/noise data.* 
 
 
-![](https://github.com/alperozaslan993/compressed-sensing-RefineGAN-novelLoss/blob/master/RefineGAN.png "")
+![](https://github.com/alperozaslan993/CS-MRI-NovelRefineGAN/blob/master/RefineGAN.png "")
 *Generator G, built by basic building blocks, can reconstruct inverse amplitude of the residual component causes by reconstruction from under-sampled
 k-space data. The final result is obtained by adding the zero-filling reconstruction to the output of G*
 
